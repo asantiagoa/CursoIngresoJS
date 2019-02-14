@@ -8,12 +8,7 @@ switch (mesDelAño){
         alert("Abrigate que hace frío");
         break;
     }
-    case "Enero":
-    case "Febrero":
-    case "Marzo":
-    case "Abril":
-    case "Mayo":
-    case "Junio":{
+    default:{
         alert("Falta para el invierno");
         break;
     }
