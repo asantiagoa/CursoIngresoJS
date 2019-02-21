@@ -1,10 +1,12 @@
 function mostrar()
 {
-//tomo la edad  
+//tomo la edad
 var laHora = document.getElementById('hora').value;
 laHora = parseInt(laHora);
-switch(laHora){
-    default:{
+switch(laHora)
+{
+    default:
+    {
         alert("La hora no existe");
         break;
     }
@@ -12,7 +14,8 @@ switch(laHora){
     case 8:
     case 9:
     case 10:
-    case 11:{
+    case 11:
+    {
         alert("Es de mañana");
         break;
     }
@@ -23,7 +26,8 @@ switch(laHora){
     case 16:
     case 17:
     case 18:
-    case 19:{
+    case 19:
+    {
         alert("Es de tarde");
         break;
     }
@@ -38,7 +42,8 @@ switch(laHora){
     case 21:
     case 22:
     case 23:
-    case 24:{
+    case 24:
+    {
         alert("Es de noche");
         break;
     }
