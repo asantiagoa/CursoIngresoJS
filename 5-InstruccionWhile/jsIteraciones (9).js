@@ -8,8 +8,9 @@ function mostrar()
 
 	while(respuesta!='no')
 	{
+		contador = parseInt(prompt("Ingrese un número"));
 		
-	
+		
 	}
 
 

@@ -1,6 +1,6 @@
 function mostrar()
 {
-  var planeta
+  var planeta         //CONSIGNA DEFAULT.
   planeta = prompt("ingrese un planeta");
   planeta = planeta.toLowerCase();
   switch(planeta)

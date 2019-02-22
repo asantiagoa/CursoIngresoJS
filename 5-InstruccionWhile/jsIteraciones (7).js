@@ -6,8 +6,14 @@ function mostrar()
   var respuesta='si';
   while(respuesta =="si")
   {
-    acumulador = acumulador + parseInt(prompt("Ingrese un numero"));
-    contador++
+    acumulador = parseInt(prompt("Ingrese un numero"));
+    while(isNaN(acumulador))
+    {
+      alert("Numero incorrecto");
+      
+    }
+    acumulador += acumulador;
+    contador++;
     respuesta = prompt("desea continuar?");
     respuesta = respuesta.toLowerCase()
   }

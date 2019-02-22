@@ -3,9 +3,16 @@ function mostrar()
 
 	var contador=0;
   var acumulador=0;
+  var numero=0;
   while(contador < 5)
   {
-    acumulador = acumulador + parseInt(prompt("Ingrese un numero"));
+    numero = parseInt(prompt("Ingrese numero"));
+    while(isNaN(numero))
+    {
+      alert("Numero invalido");
+      numero = parseInt(prompt("Ingrese Numero"));
+    }
+    acumulador = acumulador + numero;
     contador= contador + 1
 
   }
