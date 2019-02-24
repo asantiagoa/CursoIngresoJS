@@ -4,11 +4,16 @@ function mostrar()
 	var contador=0;
 	var positivo=0;
 	var negativo=1;
-	
 	var respuesta='si';
 	while(respuesta == "si")
 	{
 		contador = parseInt(prompt("Ingrese un número"));
+		while(isNaN(contador))
+		{
+			alert("numero invalido");
+			contador = parseInt(prompt("Ingrese un número"));
+		}
+
 		if(contador	>= 0)
 		{
 			positivo = positivo + contador;
@@ -21,7 +26,7 @@ function mostrar()
 			}
 		}
 		respuesta = prompt("Desea continuar?");
-		respuesta = respuesta.toLowerCase()
+		respuesta = respuesta.toLowerCase();
 	}
 
 
