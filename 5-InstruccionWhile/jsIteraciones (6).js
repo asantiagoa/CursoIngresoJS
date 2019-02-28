@@ -7,7 +7,7 @@ function mostrar()
   while(contador < 5)
   {
     numero = parseInt(prompt("Ingrese numero"));
-    while(isNaN(numero))
+    while(isNaN(numero))//no numero==NaN porque NaN != NaN
     {
       alert("Numero invalido");
       numero = parseInt(prompt("Ingrese Numero"));
@@ -22,3 +22,7 @@ document.getElementById('suma').value=acumulador;
 document.getElementById('promedio').value=acumulador/5;
 
 }//FIN DE LA FUNCIÓN
+/*do----------->ejecuta primero despues evalua
+{
+
+}while(isNaN(numero))*/
